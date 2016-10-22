@@ -1,0 +1,46 @@
+{
+  "name": "p-times",
+  "version": "0.0.0",
+  "description": "Run promise-returning & async functions a specific number of times concurrently",
+  "license": "MIT",
+  "repository": "sindresorhus/p-times",
+  "author": {
+    "name": "Sindre Sorhus",
+    "email": "sindresorhus@gmail.com",
+    "url": "sindresorhus.com"
+  },
+  "engines": {
+    "node": ">=4"
+  },
+  "scripts": {
+    "test": "xo && ava"
+  },
+  "files": [
+    "index.js"
+  ],
+  "keywords": [
+    "promise",
+    "times",
+    "number",
+    "count",
+    "loop",
+    "iterate",
+    "async",
+    "await",
+    "promises",
+    "concurrently",
+    "concurrency",
+    "parallel",
+    "bluebird"
+  ],
+  "dependencies": {
+    "p-map": "^1.0.0"
+  },
+  "devDependencies": {
+    "ava": "*",
+    "xo": "*"
+  },
+  "xo": {
+    "esnext": true
+  }
+}
