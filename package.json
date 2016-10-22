@@ -1,6 +1,6 @@
 {
   "name": "p-times",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Run promise-returning & async functions a specific number of times concurrently",
   "license": "MIT",
   "repository": "sindresorhus/p-times",
