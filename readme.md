@@ -38,7 +38,7 @@ Number of times to call `mapper`.
 
 Type: `Function`
 
-Expected to return a `Promise<boolean>` or `boolean`.
+Expected to return a `Promise` or value.
 
 #### options
 
