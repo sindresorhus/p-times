@@ -55,6 +55,7 @@ Number of concurrently pending promises returned by `mapper`.
 
 ## Related
 
+- [p-forever](https://github.com/sindresorhus/p-forever) - Run promise-returning & async functions repeatedly until you end it
 - [p-map](https://github.com/sindresorhus/p-map) - Map over promises concurrently
 - [p-filter](https://github.com/sindresorhus/p-filter) - Filter promises concurrently
 - [More…](https://github.com/sindresorhus/promise-fun)
