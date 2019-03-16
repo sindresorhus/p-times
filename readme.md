@@ -15,10 +15,11 @@ $ npm install --save p-times
 ```js
 const pTimes = require('p-times');
 
-pTimes(5, i => createFixture(`🦄-${i + 1}`)).then(result => {
+(async () => {
+	const result = await pTimes(5, i => createFixture(`🦄-${i + 1}`));
 	console.log(`Created fixtures: ${result.join(' ')}`);
 	//=> 'Created fixtures: 🦄-1 🦄-2 🦄-3 🦄-4 🦄-5'
-});
+})();
 ```
 
 
