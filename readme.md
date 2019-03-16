@@ -6,7 +6,7 @@
 ## Install
 
 ```
-$ npm install --save p-times
+$ npm install p-times
 ```
 
 
@@ -17,6 +17,7 @@ const pTimes = require('p-times');
 
 (async () => {
 	const result = await pTimes(5, i => createFixture(`🦄-${i + 1}`));
+
 	console.log(`Created fixtures: ${result.join(' ')}`);
 	//=> 'Created fixtures: 🦄-1 🦄-2 🦄-3 🦄-4 🦄-5'
 })();
