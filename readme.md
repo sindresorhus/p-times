@@ -1,14 +1,12 @@
-# p-times [![Build Status](https://travis-ci.org/sindresorhus/p-times.svg?branch=master)](https://travis-ci.org/sindresorhus/p-times)
+# p-times [![Build Status](https://travis-ci.com/sindresorhus/p-times.svg?branch=master)](https://travis-ci.com/sindresorhus/p-times)
 
 > Run promise-returning & async functions a specific number of times concurrently
-
 
 ## Install
 
 ```
 $ npm install p-times
 ```
-
 
 ## Usage
 
@@ -23,10 +21,9 @@ const pTimes = require('p-times');
 })();
 ```
 
-
 ## API
 
-### pTimes(count, mapper, [options])
+### pTimes(count, mapper, options?)
 
 Returns a `Promise` that is fulfilled when all promises returned from `mapper` are fulfilled, or rejects if any of the promises reject. The fulfilled value is an `Array` of the fulfilled values returned from `mapper` in order.
 
@@ -44,12 +41,12 @@ Expected to return a `Promise` or value.
 
 #### options
 
-Type: `Object`
+Type: `object`
 
 ##### concurrency
 
-Type: `number`<br>
-Default: `Infinity`<br>
+Type: `number`\
+Default: `Infinity`\
 Minimum: `1`
 
 Number of concurrently pending promises returned by `mapper`.
@@ -67,8 +64,3 @@ When set to `false`, instead of stopping when a promise rejects, it will wait fo
 - [p-map](https://github.com/sindresorhus/p-map) - Map over promises concurrently
 - [p-filter](https://github.com/sindresorhus/p-filter) - Filter promises concurrently
 - [More…](https://github.com/sindresorhus/promise-fun)
-
-
-## License
-
-MIT © [Sindre Sorhus](https://sindresorhus.com)
