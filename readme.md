@@ -11,14 +11,12 @@ $ npm install p-times
 ## Usage
 
 ```js
-const pTimes = require('p-times');
+import pTimes from 'p-times';
 
-(async () => {
-	const result = await pTimes(5, i => createFixture(`🦄-${i + 1}`));
+const result = await pTimes(5, i => createFixture(`🦄-${i + 1}`));
 
-	console.log(`Created fixtures: ${result.join(' ')}`);
-	//=> 'Created fixtures: 🦄-1 🦄-2 🦄-3 🦄-4 🦄-5'
-})();
+console.log(`Created fixtures: ${result.join(' ')}`);
+//=> 'Created fixtures: 🦄-1 🦄-2 🦄-3 🦄-4 🦄-5'
 ```
 
 ## API

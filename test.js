@@ -1,5 +1,5 @@
 import test from 'ava';
-import pTimes from '.';
+import pTimes from './index.js';
 
 // See `p-map` for more comprehensive tests
 test('main', async t => {

@@ -1,9 +1,6 @@
-'use strict';
-const pMap = require('p-map');
+import pMap from 'p-map';
 
 const pTimes = async (count, mapper, options) =>
-	pMap(new Array(count).fill(), (element, index) => mapper(index), options);
+	pMap(Array.from({length: count}).fill(), (_, index) => mapper(index), options);
 
-module.exports = pTimes;
-// TODO: Remove this for the next major release
-module.exports.default = pTimes;
+export default pTimes;
