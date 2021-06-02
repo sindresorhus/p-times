@@ -1,4 +1,4 @@
-# p-times [![Build Status](https://travis-ci.com/sindresorhus/p-times.svg?branch=master)](https://travis-ci.com/sindresorhus/p-times)
+# p-times
 
 > Run promise-returning & async functions a specific number of times concurrently
 
