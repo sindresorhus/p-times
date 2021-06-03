@@ -13,7 +13,7 @@ $ npm install p-times
 ```js
 import pTimes from 'p-times';
 
-const result = await pTimes(5, i => createFixture(`🦄-${i + 1}`));
+const result = await pTimes(5, index => createFixture(`🦄-${index + 1}`));
 
 console.log(`Created fixtures: ${result.join(' ')}`);
 //=> 'Created fixtures: 🦄-1 🦄-2 🦄-3 🦄-4 🦄-5'

@@ -1,6 +1,4 @@
-import {Options as PMapOptions} from 'p-map';
-
-export type Options = PMapOptions;
+import {Options} from 'p-map';
 
 /**
 Run promise-returning & async functions a specific number of times concurrently.
@@ -13,7 +11,7 @@ Run promise-returning & async functions a specific number of times concurrently.
 ```
 import pTimes from 'p-times';
 
-const result = await pTimes(5, i => createFixture(`🦄-${i + 1}`));
+const result = await pTimes(5, index => createFixture(`🦄-${index + 1}`));
 
 console.log(`Created fixtures: ${result.join(' ')}`);
 //=> 'Created fixtures: 🦄-1 🦄-2 🦄-3 🦄-4 🦄-5'
@@ -24,3 +22,5 @@ export default function pTimes<ValueType>(
 	mapper: (index: number) => ValueType | PromiseLike<ValueType>,
 	options?: Options
 ): Promise<ValueType[]>;
+
+export {Options} from 'p-map';
